@@ -1,0 +1,221 @@
+/*
+ * © Bugaev Ivan
+ * This code is protected by copyright.
+*/
+
+.biv-slider {
+  position: relative;
+}
+.biv-slider-content {
+  position: relative;
+  overflow: hidden;
+}
+.biv-slide {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 9;
+  background-position: center center;
+  background-size: cover;
+}
+.biv-slide-static {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 99;
+}
+.biv-slide .biv-slide-content {
+  width: 100%;
+  height: 100%;
+  background: rgba(2, 2, 2, 0.6) none repeat scroll 0% 0%;
+}
+.biv-slide-text {
+  padding: 10px 15px 15px 15px;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+.biv-slide-desc {
+  padding: 0px 15px 30px 15px;
+  font-size: 32px;
+  line-height: 38px;
+  color: #fff;
+  text-align: center;
+}
+.biv-slide-btns {
+  text-align: center;
+  padding: 0px 10px 0px 10px;
+}
+.biv-slide-btns-left {
+  display: inline-block;
+  padding: 15px 15px 15px 15px;
+  background-color: #1cbec9;
+  color: #fff;
+  font-size: 18px;
+  line-height: 18px;
+  border-radius: 7px;
+  margin: 0px 5px 10px 5px;
+  text-decoration: none;
+  min-width: 230px;
+  cursor: pointer;
+}
+.biv-slide-btns-left:hover {
+  background-color: #49cbd4;
+  color: #fff;
+  text-decoration: none;
+}
+.biv-slide-btns-left span {
+  display: inline-block;
+  margin-right: 5px;
+}
+.biv-slide-btns-right {
+  display: inline-block;
+  padding: 15px 15px 15px 15px;
+  background-color: #fff;
+  color: #5c4545;
+  font-size: 18px;
+  line-height: 18px;
+  border-radius: 7px;
+  margin: 0px 5px 10px 5px;
+  text-decoration: none;
+  min-width: 230px;
+  cursor: pointer;
+}
+.biv-slide-btns-right:hover {
+  background-color: #f9f9f9;
+  color: #5c4545;
+  text-decoration: none;
+}
+.biv-slide-btns-right span {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.biv-slider-nav-point {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 99;
+}
+.biv-slider-nav-point-list {
+  padding: 30px 25px 24px 25px;
+  text-align: center;
+  border-bottom: 2px solid #1cbec9;
+  overflow: hidden;
+}
+.biv-slider-nav-point-list span {
+  background-color: #fff;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin: 0px 5px 0px 5px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 12px;
+  position: relative;
+}
+.biv-slider-nav-point-list span:hover {
+  background-color: #49cbd4;
+}
+.biv-slider-nav-point-list span.point-active {
+  background-color: #1cbec9;
+}
+.biv-slider-nav-point-list span.point-active:hover {
+  background-color: #49cbd4;
+}
+
+.biv-slider-nav-point-list span:before {  
+  content: " ";
+  background-color: #fff;
+  width: 2px;
+  height: 52px;
+  display: inline-block;
+  margin-top: -30px;
+  position: absolute;
+  top: 0px;
+  left: 11px;
+}
+.biv-slider-nav-point-list span:hover:before {  
+  content: " ";
+  background-color: #49cbd4;
+  width: 2px;
+  height: 52px;
+  display: inline-block;
+  margin-top: -30px;
+  position: absolute;
+  top: 0px;
+  left: 11px;
+}
+.biv-slider-nav-point-list span.point-active:before {  
+  content: " ";
+  background-color: #1cbec9;
+  width: 2px;
+  height: 52px;
+  display: inline-block;
+  margin-top: 0px;
+  position: absolute;
+  top: 0px;
+  left: 11px;
+}
+.biv-slider-nav-point-list span.point-active:hover:before {  
+  content: " ";
+  background-color: #49cbd4;
+  width: 2px;
+  height: 52px;
+  display: inline-block;
+  margin-top: 0px;
+  position: absolute;
+  top: 0px;
+  left: 11px;
+}
+
+.biv-slider-nav-btns {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 99;
+}
+.biv-slider-nav-btns-list {
+  padding: 0px 13px 30px 13px;
+  text-align: center;
+}
+.biv-slider-nav-btns-list span {
+  background: rgba(28, 190, 201, 0.5) none repeat scroll 0% 0%;
+  color: #fff;
+  display: inline-block;
+  width: 96px;
+  height: 48px;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0px 2px 0px 2px;
+  padding-top: 12px;
+  text-align: center;
+  cursor: pointer;
+}
+.biv-slider-nav-btns-list span:hover {
+  background: rgba(28, 190, 201, 0.7) none repeat scroll 0% 0%;
+  color: #fff;
+}
+.biv-slider-nav-btns-prev {
+  border-radius: 12px 0px 0px 12px;
+}
+.biv-slider-nav-btns-next {
+  border-radius: 0px 12px 12px 0px;
+}
+
+@media (max-width:991px){
+  .biv-slide-text {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .biv-slide-desc {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}

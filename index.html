@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Home page</title>
+
+    <link href="favicon.ico" rel="shortcut icon" />
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+
+    <link href="lib/bootstrap-4.5.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="lib/fontawesome/css/all.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"> 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/biv.slider.css" rel="stylesheet">
+    <link href="css/gallery.css" rel="stylesheet">
+    <link href="css/biv.photo-viewer.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Header -->
+    <header id="header">
+        <div class="biv-header">
+            <div class="container">
+                <div class="biv-header-logo">
+                    <a href="index.html">Company <span>name</span></a>
+                </div>
+                <div class="biv-header-btn">
+                    <span onclick="BivNavBtn();">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </div>
+                <div class="biv-header-nav">
+                    <ul class="biv-header-nav-items">
+                        <li>
+                            <span onclick="BivScrolling('bivServices');">Our services</span>
+                        </li>
+                        <li>
+                            <span onclick="BivScrolling('bivGallery');">Portfolio</span>
+                        </li>
+                        <li>
+                            <span onclick="BivScrolling('bivReviews2');">Reviews</span>
+                        </li>
+                        <li>
+                            <span onclick="BivScrolling('footer');">Contacts</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!-- Content -->
+    <div role="main" id="content"> 
+
+<!-- Slider -->
+        <div class="biv-slider" id="bivSlider">
+            <div class="biv-slider-content">
+
+                <div class="biv-slide-static">
+                    <div class="biv-slide-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-8 col-md-12 col-sm-12 offset-xl-3 offset-lg-2">
+                                    <div class="biv-slide-text">BIV Concordia - multipurpose business template</div>
+                                    <div class="biv-slide-desc">Modern and fast template by bivtemplate. Responsive design with Bootstrap framework</div>
+                                    <div class="biv-slide-btns">
+                                        <span class="biv-slide-btns-right" onclick="BivScrolling('bivServices');"><span><i class="fas fa-arrow-down"></i></span> To learn more</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="biv-slide" data-src="img/demo/slider/01.jpg">
+                    <div class="biv-slide-content">
+                    </div>
+                </div>
+
+                <div class="biv-slide" data-src="img/demo/slider/02.jpg">
+                    <div class="biv-slide-content">
+                    </div>
+                </div>
+
+                <div class="biv-slide" data-src="img/demo/slider/03.jpg">
+                    <div class="biv-slide-content">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+<!-- Services -->
+        <div class="biv-services" id="bivServices">
+            <div class="biv-services-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="biv-services-info">
+                                <div class="biv-services-info-h1">
+                                    <h1>The main direction of the company</h1>
+                                </div>
+                                <div class="biv-services-info-desc">Here you can write the title H1 and a description of your company</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                            <div class="biv-services-item">
+                                <div class="biv-services-item-content">
+                                    <div class="biv-services-item-icon">
+                                        <span>
+                                            <i class="fas fa-code"></i>
+                                        </span>
+                                    </div>
+                                    <div class="biv-services-item-title">Website development</div>
+                                    <div class="biv-services-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                            <div class="biv-services-item">
+                                <div class="biv-services-item-content">
+                                    <div class="biv-services-item-icon">
+                                        <span>
+                                            <i class="fas fa-chalkboard"></i>
+                                        </span>
+                                    </div>
+                                    <div class="biv-services-item-title">Creating layouts</div>
+                                    <div class="biv-services-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                            <div class="biv-services-item">
+                                <div class="biv-services-item-content">
+                                    <div class="biv-services-item-icon">
+                                        <span>
+                                            <i class="fas fa-sliders-h"></i>
+                                        </span>
+                                    </div>
+                                    <div class="biv-services-item-title">Setting up ads</div>
+                                    <div class="biv-services-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                            <div class="biv-services-item">
+                                <div class="biv-services-item-content">
+                                    <div class="biv-services-item-icon">
+                                        <span>
+                                            <i class="fas fa-network-wired"></i>
+                                        </span>
+                                    </div>
+                                    <div class="biv-services-item-title">Project service</div>
+                                    <div class="biv-services-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                            <div class="biv-services-item">
+                                <div class="biv-services-item-content">
+                                    <div class="biv-services-item-icon">
+                                        <span>
+                                            <i class="fas fa-server"></i>
+                                        </span>
+                                    </div>
+                                    <div class="biv-services-item-title">Server administration</div>
+                                    <div class="biv-services-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                            <div class="biv-services-item">
+                                <div class="biv-services-item-content">
+                                    <div class="biv-services-item-icon">
+                                        <span>
+                                            <i class="fas fa-terminal"></i>
+                                        </span>
+                                    </div>
+                                    <div class="biv-services-item-title">Translation of texts</div>
+                                    <div class="biv-services-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Advantages -->
+        <div class="biv-advantages" id="bivAdvantages">
+            <div class="biv-advantages-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="biv-advantages-info">
+                                <div class="biv-advantages-info-h2">
+                                    <h2>Company advantages</h2>
+                                </div>
+                                <div class="biv-advantages-info-desc">You can list your advantages here</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="biv-advantages-content">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                            <div class="biv-advantages-item">
+                                <div class="biv-advantages-item-icon">
+                                    <span>
+                                        <i class="fas fa-sliders-h"></i>
+                                    </span>
+                                </div>
+                                <div class="biv-advantages-item-title">
+                                    <h3>Flexible settings</h3>
+                                </div>
+                                <div class="biv-advantages-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec mauris quis tortor tempus porta.</div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                            <div class="biv-advantages-item">
+                                <div class="biv-advantages-item-icon">
+                                    <span>
+                                        <i class="fas fa-cogs"></i>
+                                    </span>
+                                </div>
+                                <div class="biv-advantages-item-title">
+                                    <h3>Quick setup</h3>
+                                </div>
+                                <div class="biv-advantages-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec mauris quis tortor tempus porta.</div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                            <div class="biv-advantages-item">
+                                <div class="biv-advantages-item-icon">
+                                    <span>
+                                        <i class="fas fa-tasks"></i>
+                                    </span>
+                                </div>
+                                <div class="biv-advantages-item-title">
+                                    <h3>Lots of parameters</h3>
+                                </div>
+                                <div class="biv-advantages-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec mauris quis tortor tempus porta.</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                            <div class="biv-advantages-item">
+                                <div class="biv-advantages-item-icon">
+                                    <span>
+                                        <i class="fas fa-map-marked-alt"></i>
+                                    </span>
+                                </div>
+                                <div class="biv-advantages-item-title">
+                                    <h3>Convenient location</h3>
+                                </div>
+                                <div class="biv-advantages-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec mauris quis tortor tempus porta.</div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                            <div class="biv-advantages-item">
+                                <div class="biv-advantages-item-icon">
+                                    <span>
+                                        <i class="fas fa-taxi"></i>
+                                    </span>
+                                </div>
+                                <div class="biv-advantages-item-title">
+                                    <h3>Free shipping</h3>
+                                </div>
+                                <div class="biv-advantages-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec mauris quis tortor tempus porta.</div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                            <div class="biv-advantages-item">
+                                <div class="biv-advantages-item-icon">
+                                    <span>
+                                        <i class="fas fa-tv"></i>
+                                    </span>
+                                </div>
+                                <div class="biv-advantages-item-title">
+                                    <h3>Modern technology</h3>
+                                </div>
+                                <div class="biv-advantages-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec mauris quis tortor tempus porta.</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                            <div class="biv-advantages-item">
+                                <div class="biv-advantages-item-icon">
+                                    <span>
+                                        <i class="fas fa-balance-scale"></i>
+                                    </span>
+                                </div>
+                                <div class="biv-advantages-item-title">
+                                    <h3>Fair price</h3>
+                                </div>
+                                <div class="biv-advantages-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec mauris quis tortor tempus porta.</div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                            <div class="biv-advantages-item">
+                                <div class="biv-advantages-item-icon">
+                                    <span>
+                                        <i class="fas fa-coffee"></i>
+                                    </span>
+                                </div>
+                                <div class="biv-advantages-item-title">
+                                    <h3>Coffee as a gift</h3>
+                                </div>
+                                <div class="biv-advantages-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec mauris quis tortor tempus porta.</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Gallery-->
+        <div class="biv-gallery" id="bivGallery">
+            <div class="biv-gallery-content">
+                <div class="container">
+                    <div id="bivPortfolioItems">
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <div class="biv-gallery-info">
+                                    <div class="biv-gallery-info-h2">
+                                        <h2>Photo gallery</h2>
+                                    </div>
+                                    <div class="biv-gallery-info-desc">Photos of completed works</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 biv-gallery-section biv-gallery-section-1">
+                                <div class="biv-gallery-item biv-photo-viewer-item" data-src="img/demo/portfolio/full/01.jpg">
+                                    <div class="biv-gallery-item-img">
+                                        <span class="biv-background" data-src="img/demo/portfolio/01.jpg"></span>
+                                    </div>
+                                    <div class="biv-gallery-item-desc">
+                                        <div class="biv-gallery-item-desc-icon">
+                                            <i class="fas fa-search-plus"></i>
+                                        </div>
+                                        <div class="biv-gallery-item-desc-title">Enlarge photo</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 biv-gallery-section biv-gallery-section-1">
+                                <div class="biv-gallery-item biv-photo-viewer-item" data-src="img/demo/portfolio/full/02.jpg">
+                                    <div class="biv-gallery-item-img">
+                                        <span class="biv-background" data-src="img/demo/portfolio/02.jpg"></span>
+                                    </div>
+                                    <div class="biv-gallery-item-desc">
+                                        <div class="biv-gallery-item-desc-icon">
+                                            <i class="fas fa-search-plus"></i>
+                                        </div>
+                                        <div class="biv-gallery-item-desc-title">Enlarge photo</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 biv-gallery-section biv-gallery-section-1">
+                                <div class="biv-gallery-item biv-photo-viewer-item" data-src="img/demo/portfolio/full/03.jpg">
+                                    <div class="biv-gallery-item-img">
+                                        <span class="biv-background" data-src="img/demo/portfolio/03.jpg"></span>
+                                    </div>
+                                    <div class="biv-gallery-item-desc">
+                                        <div class="biv-gallery-item-desc-icon">
+                                            <i class="fas fa-search-plus"></i>
+                                        </div>
+                                        <div class="biv-gallery-item-desc-title">Enlarge photo</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 biv-gallery-section biv-gallery-section-1">
+                                <div class="biv-gallery-item biv-photo-viewer-item" data-src="img/demo/portfolio/full/04.jpg">
+                                    <div class="biv-gallery-item-img">
+                                        <span class="biv-background" data-src="img/demo/portfolio/04.jpg"></span>
+                                    </div>
+                                    <div class="biv-gallery-item-desc">
+                                        <div class="biv-gallery-item-desc-icon">
+                                            <i class="fas fa-search-plus"></i>
+                                        </div>
+                                        <div class="biv-gallery-item-desc-title">Enlarge photo</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 biv-gallery-section biv-gallery-section-2">
+                                <div class="biv-gallery-item biv-photo-viewer-item" data-src="img/demo/portfolio/full/05.jpg">
+                                    <div class="biv-gallery-item-img">
+                                        <span class="biv-background" data-src="img/demo/portfolio/05.jpg"></span>
+                                    </div>
+                                    <div class="biv-gallery-item-desc">
+                                        <div class="biv-gallery-item-desc-icon">
+                                            <i class="fas fa-search-plus"></i>
+                                        </div>
+                                        <div class="biv-gallery-item-desc-title">Enlarge photo</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 biv-gallery-section biv-gallery-section-3">
+                                <div class="biv-gallery-item biv-photo-viewer-item" data-src="img/demo/portfolio/full/06.jpg">
+                                    <div class="biv-gallery-item-img">
+                                        <span class="biv-background" data-src="img/demo/portfolio/06.jpg"></span>
+                                    </div>
+                                    <div class="biv-gallery-item-desc">
+                                        <div class="biv-gallery-item-desc-icon">
+                                            <i class="fas fa-search-plus"></i>
+                                        </div>
+                                        <div class="biv-gallery-item-desc-title">Enlarge photo</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Company team -->
+        <div class="biv-team-t" id="bivTeam2">
+            <div class="biv-team-t-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="biv-team-t-info">
+                                <div class="biv-team-t-info-h2">
+                                    <h2>Second block display option</h2>
+                                </div>
+                                <div class="biv-team-t-info-desc">List of employees of the organization</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="biv-team-t-item">
+                                <div class="biv-team-t-item-img">
+                                    <span class="biv-background" data-src="img/demo/team/01.jpg"></span>
+                                </div>
+                                <div class="biv-team-t-item-info">
+                                    <div class="biv-team-t-item-info-name">Julia</div>
+                                    <div class="biv-team-t-item-info-position">Director</div>
+                                </div>
+                                <div class="biv-team-t-item-social">
+                                    <a href="#!">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#!">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#!">
+                                        <i class="fab fa-pinterest-p"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="biv-team-t-item">
+                                <div class="biv-team-t-item-img">
+                                    <span class="biv-background" data-src="img/demo/team/02.jpg"></span>
+                                </div>
+                                <div class="biv-team-t-item-info">
+                                    <div class="biv-team-t-item-info-name">Robert</div>
+                                    <div class="biv-team-t-item-info-position">Deputy Director</div>
+                                </div>
+                                <div class="biv-team-t-item-social">
+                                    <a href="#!">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#!">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#!">
+                                        <i class="fab fa-pinterest-p"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="biv-team-t-item">
+                                <div class="biv-team-t-item-img">
+                                    <span class="biv-background" data-src="img/demo/team/03.jpg"></span>
+                                </div>
+                                <div class="biv-team-t-item-info">
+                                    <div class="biv-team-t-item-info-name">Anna</div>
+                                    <div class="biv-team-t-item-info-position">Manager</div>
+                                </div>
+                                <div class="biv-team-t-item-social">
+                                    <a href="#!">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#!">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#!">
+                                        <i class="fab fa-pinterest-p"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="biv-team-t-item">
+                                <div class="biv-team-t-item-img">
+                                    <span class="biv-background" data-src="img/demo/team/04.jpg"></span>
+                                </div>
+                                <div class="biv-team-t-item-info">
+                                    <div class="biv-team-t-item-info-name">Ethan</div>
+                                    <div class="biv-team-t-item-info-position">Sales manager</div>
+                                </div>
+                                <div class="biv-team-t-item-social">
+                                    <a href="#!">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#!">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#!">
+                                        <i class="fab fa-pinterest-p"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="biv-team-t-item">
+                                <div class="biv-team-t-item-img">
+                                    <span class="biv-background" data-src="img/demo/team/05.jpg"></span>
+                                </div>
+                                <div class="biv-team-t-item-info">
+                                    <div class="biv-team-t-item-info-name">Erika</div>
+                                    <div class="biv-team-t-item-info-position">Seller</div>
+                                </div>
+                                <div class="biv-team-t-item-social">
+                                    <a href="#!">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#!">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#!">
+                                        <i class="fab fa-pinterest-p"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="biv-team-t-item">
+                                <div class="biv-team-t-item-img">
+                                    <span class="biv-background" data-src="img/demo/team/06.jpg"></span>
+                                </div>
+                                <div class="biv-team-t-item-info">
+                                    <div class="biv-team-t-item-info-name">Rebecca</div>
+                                    <div class="biv-team-t-item-info-position">Marketer</div>
+                                </div>
+                                <div class="biv-team-t-item-social">
+                                    <a href="#!">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#!">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#!">
+                                        <i class="fab fa-pinterest-p"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Reviews -->
+        <div class="biv-reviews-t" id="bivReviews2">
+            <div class="biv-reviews-t-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="biv-reviews-t-info">
+                                <div class="biv-reviews-t-info-h2">
+                                    <h2>Second block display option</h2>
+                                </div>
+                                <div class="biv-reviews-t-info-desc">People trust us for the quality work done</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div class="biv-reviews-t-item">
+                                <div class="biv-reviews-t-item-border">
+                                    <div class="biv-reviews-t-item-photo">
+                                        <span class="biv-background" data-src="img/demo/reviews/01.jpg"></span>
+                                    </div>
+                                    <div class="biv-reviews-t-item-text">
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla neque semper felis hendrerit, in dignissim diam molestie. Phasellus faucibus mi et neque auctor, eget efficitur dolor molestie. Morbi ac eros eget dolor scelerisque efficitur eget at nunc. Donec iaculis, tellus quis volutpat faucibus, arcu diam hendrerit tellus, quis accumsan arcu ante quis ligula. Sed pretium maximus ultrices. Donec vulputate porta tortor, at scelerisque dolor sagittis sed. Fusce cursus justo egestas massa iaculis euismod.</span>
+                                    </div>
+                                    <div class="biv-reviews-t-item-info">
+                                        <div class="biv-reviews-t-item-info-author">Anna</div>
+                                        <div class="biv-reviews-t-item-info-firm">Company name</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div class="biv-reviews-t-item">
+                                <div class="biv-reviews-t-item-border">
+                                    <div class="biv-reviews-t-item-photo">
+                                        <span class="biv-background" data-src="img/demo/reviews/02.jpg"></span>
+                                    </div>
+                                    <div class="biv-reviews-t-item-text">
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla neque semper felis hendrerit, in dignissim diam molestie. Phasellus faucibus mi et neque auctor, eget efficitur dolor molestie. Morbi ac eros eget dolor scelerisque efficitur eget at nunc. Donec iaculis, tellus quis volutpat faucibus, arcu diam hendrerit tellus, quis accumsan arcu ante quis ligula. Sed pretium maximus ultrices. Donec vulputate porta tortor, at scelerisque dolor sagittis sed. Fusce cursus justo egestas massa iaculis euismod.</span>
+                                    </div>
+                                    <div class="biv-reviews-t-item-info">
+                                        <div class="biv-reviews-t-item-info-author">Michael</div>
+                                        <div class="biv-reviews-t-item-info-firm">Company name</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div class="biv-reviews-t-item">
+                                <div class="biv-reviews-t-item-border">
+                                    <div class="biv-reviews-t-item-photo">
+                                        <span class="biv-background" data-src="img/demo/reviews/03.jpg"></span>
+                                    </div>
+                                    <div class="biv-reviews-t-item-text">
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla neque semper felis hendrerit, in dignissim diam molestie. Phasellus faucibus mi et neque auctor, eget efficitur dolor molestie. Morbi ac eros eget dolor scelerisque efficitur eget at nunc. Donec iaculis, tellus quis volutpat faucibus, arcu diam hendrerit tellus, quis accumsan arcu ante quis ligula. Sed pretium maximus ultrices. Donec vulputate porta tortor, at scelerisque dolor sagittis sed. Fusce cursus justo egestas massa iaculis euismod.</span>
+                                    </div>
+                                    <div class="biv-reviews-t-item-info">
+                                        <div class="biv-reviews-t-item-info-author">Rebecca</div>
+                                        <div class="biv-reviews-t-item-info-firm">Company name</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div class="biv-reviews-t-item">
+                                <div class="biv-reviews-t-item-border">
+                                    <div class="biv-reviews-t-item-photo">
+                                        <span class="biv-background" data-src="img/demo/reviews/04.jpg"></span>
+                                    </div>
+                                    <div class="biv-reviews-t-item-text">
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla neque semper felis hendrerit, in dignissim diam molestie. Phasellus faucibus mi et neque auctor, eget efficitur dolor molestie. Morbi ac eros eget dolor scelerisque efficitur eget at nunc. Donec iaculis, tellus quis volutpat faucibus, arcu diam hendrerit tellus, quis accumsan arcu ante quis ligula. Sed pretium maximus ultrices. Donec vulputate porta tortor, at scelerisque dolor sagittis sed. Fusce cursus justo egestas massa iaculis euismod.</span>
+                                    </div>
+                                    <div class="biv-reviews-t-item-info">
+                                        <div class="biv-reviews-t-item-info-author">Maria</div>
+                                        <div class="biv-reviews-t-item-info-firm">Company name</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<!-- Footer -->
+    <footer id="footer">
+        <div class="biv-footer">
+            <div class="biv-footer-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-4 col-md-12 col-sm-12">
+                            <div class="biv-footer-content-about">
+                                <div class="biv-footer-content-about-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi enim ex, condimentum eu ornare eget, commodo eu nulla. Phasellus fermentum erat ut tellus posuere, finibus placerat elit accumsan. Morbi fermentum finibus nisi venenatis tempus. Donec quam lectus, efficitur sit amet augue placerat, tincidunt euismod enim.</div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
+                            <div class="biv-footer-content-contacts">
+                                <ul>
+                                    <li><span><i class="fas fa-clock"></i></span>we work 24/7</li>
+                                    <li><span><i class="fas fa-map-marker-alt"></i></span>Rorance Road, New York</li>
+                                    <li>
+                                        <a href="mailto:"><span><i class="fas fa-envelope"></i></span>info@exampe</a>
+                                    </li>
+                                    <li>
+                                        <a href="tel:"><span><i class="fas fa-phone-alt"></i></span>(123) 456-7890</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12">
+                            <div class="biv-footer-content-social">
+                                <ul>
+                                    <li>
+                                        <a href="#!">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <i class="fab fa-pinterest-p"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <i class="fab fa-google-plus-g"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <i class="fab fa-skype"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="biv-footer-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13007073.571715705!2d-104.65411479699895!3d37.25826261177418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sru!4v1613391604512!5m2!1sen!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="biv-footer-info">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div class="biv-footer-info-name">© 2021 company name.</div>
+                            <div class="biv-footer-info-rights">All rights reserved.</div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div class="biv-footer-info-doc">
+                                <a href="#!">Terms</a>
+                                <a href="#!">Privacy Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!-- Preloader -->
+    <div class="biv-preloader" id="bivPreloader">
+        <div class="biv-preloader-content">
+            <span class="biv-preloader-icon">
+                <i class="fas fa-sync fa-spin"></i>
+            </span>
+            <span class="biv-preloader-text">page loading</span>
+       </div>
+    </div>
+
+
+<!-- Terms of use -->
+    <div class="biv-agreement biv-agreement-hidden" id="bivAgreement">
+       <div class="biv-agreement-text">We use cookies to personalize content, customize and measure advertising performance, and to provide general security. By clicking the button or continuing to use the site, you authorize us to collect information on WEBSITE through the use of cookies. For more information, including the available management tools, see <a href="#!" rel="nofollow">Cookie Policy.</a></div>
+        <div class="biv-agreement-btn">
+            <span id="agreementBtn" onclick="BivAgreementBtn();">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/biv.slider.js"></script>
+    <script src="js/biv.photo-viewer.js"></script>
+
+</body>
+</html>

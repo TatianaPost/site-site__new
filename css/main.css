@@ -1,0 +1,469 @@
+/*
+ * © Bugaev Ivan
+ * This code is protected by copyright.
+*/
+
+/* Services */
+
+.biv-services {
+  background-color: #f9f9f9;
+}
+.biv-services-content {
+  padding: 90px 15px 60px 15px;
+}
+.biv-services-info {
+  margin: 0px 0px 60px 0px;
+  text-align: center;
+}
+.biv-services-info-h1 {
+  margin-bottom: 15px;
+}
+.biv-services-info-h1 h1 {
+  color: #3a3d3d;
+  margin: 0px;
+  padding: 0px;
+  font-size: 40px;
+  line-height: 46px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.biv-services-info-desc {
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+  font-weight: 300;
+}
+.biv-services-item {
+  display: block;
+  margin-bottom: 30px; 
+  border: 2px solid #e6e6e6;
+  padding: 15px;
+  transition: 0.5s linear;
+}
+.biv-services-item-content {
+  background-color: #fff;
+  box-shadow: 0px 0px 15px #b5b2b2;
+  padding: 15px;
+  transition: 0.5s linear;
+}
+.biv-services-item:hover {
+  padding: 0px;
+}
+.biv-services-item:hover .biv-services-item-content {
+  padding: 30px;
+}
+.biv-services-item-icon {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.biv-services-item-icon span {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  background-color: #1cbec9;
+  color: #fff;
+  font-size: 32px;
+  line-height: 32px;
+  padding-top: 16px;
+  border-radius: 32px;
+}
+.biv-services-item-title {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 5px;
+  color: #000;
+}
+.biv-services-item-desc {
+  color: #3a3d3d;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+@media (max-width:991px){
+  .biv-services-info-h1 h1 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+  .biv-services-info-desc {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+/* Advantages */
+
+.biv-advantages {
+  background-image: url("../img/demo/background/01.jpg");
+  background-position: top center;
+  background-size: cover;
+}
+.biv-advantages-header {
+  padding: 90px 15px 30px 15px;
+  background: rgba(2, 2, 2, 0.6) none repeat scroll 0% 0%;
+  border-bottom: 2px solid #1cbec9;
+}
+.biv-advantages-info {
+  margin: 0px 0px 60px 0px;
+}
+.biv-advantages-info-h2 {
+  margin-bottom: 15px;
+}
+.biv-advantages-info-h2 h2 {
+  color: #fff;
+  margin: 0px;
+  padding: 0px;
+  font-size: 40px;
+  line-height: 46px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.biv-advantages-info-desc {
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+  font-weight: 300;
+}
+.biv-advantages-content {
+  padding: 90px 15px 60px 15px;
+  background: rgba(2, 2, 2, 0.6) none repeat scroll 0% 0%;
+  overflow: hidden;
+}
+.biv-advantages-item {
+  position: relative;
+  padding: 0px 0px 30px 78px;
+}
+.biv-advantages-item-icon {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.biv-advantages-item-icon:before {
+  content: " ";
+  background-color: #fff;
+  width: 2px;
+  height: 2000px;
+  display: inline-block;
+  margin-top: -30px;
+  position: absolute;
+  bottom: 0px;
+  left: 23px;
+  z-index: 9;
+}
+.biv-advantages-item:hover .biv-advantages-item-icon:before {
+  background-color: #1cbec9;
+  z-index: 999;
+}
+.biv-advantages-item-icon span {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  line-height: 24px;
+  padding-top: 12px;
+  border-radius: 24px;
+  background-color: #fff;
+  color: #484d55;
+  text-align: center;
+  z-index: 9999;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.biv-advantages-item:hover .biv-advantages-item-icon span {
+  background-color: #1cbec9;
+  color: #fff;
+}
+.biv-advantages-item-title h3 {
+  font-size: 26px;
+  line-height: 34px;
+  color: #fff;
+  font-weight: 400;
+}
+.biv-advantages-item-desc {
+  font-size: 18px;
+  line-height: 26px;
+  color: #fff;
+  font-weight: 300;
+}
+@media (max-width:991px){
+  .biv-advantages-info-h2 h2 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+  .biv-advantages-info-desc {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.biv-gallery-info {
+  margin: 0px 0px 70px 0px;
+  text-align: center;
+}
+.biv-gallery-info-h2 {
+  margin-bottom: 15px;
+}
+.biv-gallery-info-h2 h2 {
+  color: #000;
+  margin: 0px;
+  padding: 0px;
+  font-size: 40px;
+  line-height: 46px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.biv-gallery-info-desc {
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+  font-weight: 300;
+}
+@media (max-width:991px){
+  .biv-gallery-info-h2 h2 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+  .biv-gallery-info-desc {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+/* Company team */
+
+.biv-team-t {
+  background-color: #f9f9f9;
+}
+.biv-team-t-content {
+  padding: 90px 15px 60px 15px;
+  overflow: hidden;
+}
+.biv-team-t-info {
+  margin: 0px 0px 60px 0px;
+  text-align: center;
+}
+.biv-team-t-info-h2 {
+  margin-bottom: 15px;
+}
+.biv-team-t-info-h2 h2 {
+  color: #484d55;
+  margin: 0px;
+  padding: 0px;
+  font-size: 40px;
+  line-height: 46px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.biv-team-t-info-desc {
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+  font-weight: 300;
+}
+.biv-team-t-item {
+  margin-bottom: 30px;
+  position: relative;
+  border: 2px solid #1cbec9;
+  border-radius: 7px;
+  transition: 0.2s linear;
+}
+.biv-team-t-item-img {
+  padding: 25px 0px 25px 0px;
+  width: 100%;
+  text-align: center;
+}
+.biv-team-t-item-img span {
+  display: inline-block;
+  background-position: center center;
+  background-size: cover;
+  width: 256px;
+  height: 256px;
+  border-radius: 128px;
+  box-shadow: 0px 0px 25px #e3e3e3;
+}
+.biv-team-t-item-info {
+  background-color: #1cbec9;
+  color: #fff;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  transition: 0.2s linear;
+}
+.biv-team-t-item:hover {
+  border: 2px solid #484d55;
+}
+.biv-team-t-item:hover .biv-team-t-item-info {
+  background-color: #484d55;
+}
+.biv-team-t-item-info-name {
+  font-size: 22px;
+  line-height: 28px;
+  margin-bottom: 1px;
+  font-weight: 700;
+}
+.biv-team-t-item-info-position {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 300;
+}
+.biv-team-t-item-social {
+  width: 100%;
+  padding: 15px 10px 5px 10px;
+  text-align: center;
+}
+.biv-team-t-item-social a {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  margin: 0px 5px 10px 5px;
+  text-decoration: none;
+  border: 2px solid #484d55;
+  color: #484d55;
+  font-size: 24px;
+  line-height: 24px;
+  padding-top: 10px;
+  text-align: center;
+  border-radius: 24px;
+}
+.biv-team-t-item-social a:hover {
+  border: 2px solid #484d55;
+  background-color: #484d55;
+  color: #fff;
+  text-decoration: none;
+}
+@media (max-width:991px){
+  .biv-team-t-info-h2 h2 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+  .biv-team-t-info-desc {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+/* Reviews */
+
+.biv-reviews-t {
+  background-color: #fff;
+}
+.biv-reviews-t-content {
+  padding: 90px 15px 90px 15px;
+  overflow: hidden;
+}
+.biv-reviews-t-info {
+  margin: 0px 0px 0px 0px;
+  text-align: center;
+}
+.biv-reviews-t-info-h2 {
+  margin-bottom: 15px;
+}
+.biv-reviews-t-info-h2 h2 {
+  color: #484d55;
+  margin: 0px;
+  padding: 0px;
+  font-size: 40px;
+  line-height: 46px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.biv-reviews-t-info-desc {
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+  font-weight: 300;
+}
+.biv-reviews-t-item {
+  border-left: 2px solid #1cbec9;
+  border-top: 2px solid #1cbec9;
+  padding: 15px 0px 0px 15px;
+  margin-top: 151px;
+}
+.biv-reviews-t-item-border {
+  box-shadow: 0px 0px 15px #b5b2b2;
+  background-color: #fff;
+  position: relative;
+  padding: 88px 0px 0px 0px;
+}
+.biv-reviews-t-item-text {
+  padding: 30px 15px 30px 15px;
+  position: relative;
+}
+.biv-reviews-t-item-text span {
+  display: block;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 300;
+  color: #000;
+  position: relative;
+  text-align: justify;
+  padding: 0px 22px 0px 20px;
+}
+.biv-reviews-t-item-text span::before, .biv-reviews-t-item-text span::after {
+  position: absolute; 
+}
+.biv-reviews-t-item-text span::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "\f10d";
+  color: #000;
+  font-size: 12px;
+  line-height: 12px;
+  top: 8px; 
+  left: 0; 
+}
+.biv-reviews-t-item-text span::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "\f10e";
+  font-size: 12px;
+  line-height: 12px;
+  color: #000;
+  bottom: 5px; 
+  right: 0;
+}
+.biv-reviews-t-item-photo {
+  position: absolute;
+  top: -109px;
+  left: 0px;
+  z-index: 9;
+  width: 100%;
+  text-align: center;
+}
+.biv-reviews-t-item-photo span {
+  display: inline-block;
+  background-position: center center;
+  background-size: cover;
+  border: 2px solid #1cbec9;
+  width: 196px;
+  height: 196px;
+  border-radius: 98px;
+}
+.biv-reviews-t-item-info {
+  padding: 0px 30px 30px 30px;
+}
+.biv-reviews-t-item-info-author {
+  text-align: right;
+  font-size: 22px;
+  line-height: 30px;
+  color: #000;
+}
+.biv-reviews-t-item-info-firm {
+  text-align: right;
+  font-size: 18px;
+  line-height: 26px;
+  color: #484d55;
+}
+@media (max-width:991px){
+  .biv-reviews-t-info-h2 h2 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+  .biv-reviews-t-info-desc {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}

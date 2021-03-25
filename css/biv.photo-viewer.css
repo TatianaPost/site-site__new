@@ -1,0 +1,90 @@
+/*
+ * © Bugaev Ivan
+ * This code is protected by copyright.
+*/
+
+/* Photo viewer */
+
+#bivPhotoViewer {
+  display: none;
+}
+.biv-photo-viewer {
+  position: fixed;
+  z-index: 9999999;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  overflow-y: auto;
+  text-align: center;
+  opacity: 0;
+}
+#bivPhotoViewerImage img {
+  max-width: 100%;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+.biv-photo-viewer-close {
+  position: fixed;
+  z-index: 99999999;
+  top: 30px;
+  right: 30px;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background: rgba(2, 2, 2, 0.6) none repeat scroll 0% 0%;
+  color: #fff;
+  font-size: 24px;
+  line-height: 24px;
+  padding-top: 12px;
+  cursor: pointer;
+}
+.biv-photo-viewer-close:hover {
+  background: rgba(2, 2, 2, 0.8) none repeat scroll 0% 0%;
+  color: #fff;
+}
+.biv-photo-viewer-btn-left {
+  position: fixed;
+  z-index: 99999999;
+  top: 50%;
+  left: 30px;
+  display: inline-block;
+  margin-top: -24px;
+  width: 48px;
+  height: 48px;
+  background: rgba(2, 2, 2, 0.6) none repeat scroll 0% 0%;
+  color: #fff;
+  font-size: 24px;
+  line-height: 24px;
+  padding-top: 12px;
+  cursor: pointer;
+}
+.biv-photo-viewer-btn-left:hover {
+  background: rgba(2, 2, 2, 0.8) none repeat scroll 0% 0%;
+  color: #fff;
+}
+.biv-photo-viewer-btn-right {
+  position: fixed;
+  z-index: 99999999;
+  top: 50%;
+  right: 30px;
+  display: inline-block;
+  margin-top: -24px;
+  width: 48px;
+  height: 48px;
+  background: rgba(2, 2, 2, 0.6) none repeat scroll 0% 0%;
+  color: #fff;
+  font-size: 24px;
+  line-height: 24px;
+  padding-top: 12px;
+  cursor: pointer;
+}
+.biv-photo-viewer-btn-right:hover {
+  background: rgba(2, 2, 2, 0.8) none repeat scroll 0% 0%;
+  color: #fff;
+}
